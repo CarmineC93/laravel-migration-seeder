@@ -20,9 +20,9 @@ return new class extends Migration
             $table->string('end_station');
             $table->time('departure_time');
             $table->time('arrival_time');
-            $table->integer('train_code', 10);
+            $table->string('train_code');
             $table->tinyInteger('carriage_nmbr');
-            $table->tinyInteger("in_time");
+            $table->tinyInteger('in_time');
             $table->tinyInteger('deleted')->unsigned()->default(0);
             $table->timestamps();
         });
