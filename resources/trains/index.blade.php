@@ -6,9 +6,11 @@
         <ul>
             @foreach ($trains as $train)
                 <li>{{ $train->company }}</li>
+                <li>{{ $train->train_code }}</li>
             @endforeach
         </ul>
 
-        <h5>{{ $trains_of_today }}</h5>
+
+        <h5>{{ $today_trains }}</h5>
     </div>
 @endsection
